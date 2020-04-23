@@ -110,7 +110,7 @@ The problem is then to minimize your loss function over the class of functions t
 &lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
 &lt;p&gt;I went over what makes a problem a Machine Learning problem: the 4 phases of Choosing a Task, Modelling the Task, Choosing a Model Class, and Learning i.e. Optimizing over the Model Class. I hope the example helped to clear this up. We also saw that by trying to solve a specific task, we may have to define a new task that is a good proxy for our original task. In the end though, we always validate our approach on the first task on held-out data, using the loss function that we designed for it, here the 0-1 error loss.&lt;/p&gt;
 &lt;p&gt;I hope this helps making Machine Learning less of a buzz word and more understandable! I&amp;rsquo;m looking forward to your comments, don&amp;rsquo;t hesitate to leave one below.&lt;/p&gt;
-&lt;p&gt;Going further&lt;/p&gt;
+&lt;h2 id=&#34;going-further&#34;&gt;Going further&lt;/h2&gt;
 &lt;p&gt;The Bible of ML: 
 Hastie, T.; Tibshirani, R. &amp;amp; Friedman, J. (2001), The Elements of Statistical Learning , Springer New York Inc. , New York, NY, USA .&lt;/p&gt;
 &lt;p&gt;The Bible of Optimization, basic and advanced:
