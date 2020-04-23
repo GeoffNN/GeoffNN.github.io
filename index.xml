@@ -89,10 +89,46 @@ The problem is then to minimize your loss function over the class of functions t
 &lt;p&gt;This here is the actual way that you will choose your function that minimizes your loss over your data in the class of functions that you chose. This is the learning and what makes ML so compelling to me, and makes it treated as almost magical in the media. It is usually done by optimizing the loss function, either in a principled or heuristic way. Optimization is the field of studying how to find minima of loss functions (sometimes under constraints).&lt;/p&gt;
 &lt;p&gt;This is also what made the success of deep learning, where in the parameter space, the overall loss is differentiable with regard to the parameters, allowing us to simply glide towards a (near) optimal solution using Stochastic Gradient Descent.&lt;/p&gt;
 &lt;h1 id=&#34;who-does-what&#34;&gt;Who does what?&lt;/h1&gt;
-&lt;p&gt;ML to me is described by these 4 steps. Both researchers and engineers usually focus on a subset of these steps. For example, for a well-known task such as classification (i.e. for each data point, outputting the category it should belong to), or regression (for each data point, predicting the value of something), both the task and the loss function are well known. Most work can then focus on choosing the model family and how to compute the best model of the family. Engineers on the other hand will often have a hard time modelling their task in a nice loss function, and then apply known model families and optimization schemes.&lt;/p&gt;
+&lt;p&gt;ML to me is described by these 4 steps. Both researchers and engineers usually focus on a subset of these steps. For example, for a well-known task such as classification (i.e. for each data point, outputting the category it should belong to), or regression (for each data point, predicting the value of something), both the task and the loss function are well known. Most work can then focus on choosing the model family and how to compute the best model of the family. On the other hand, for unsupervised learning tasks, the task is not as clear, and the loss is an open question. On their side, ML engineers will often have a hard time modelling their domain-specific task in a nice loss function, and then apply known model families and optimization schemes.&lt;/p&gt;
 &lt;h1 id=&#34;now-for-an-example&#34;&gt;Now for an example&lt;/h1&gt;
 &lt;p&gt;Let&amp;rsquo;s consider the task (step 1) of recognizing hand written digits, supposing that we know the ground truth for a subset of our data &amp;ndash; we&amp;rsquo;ll call this subset our training set. Our input is going to be a 784 (ie. 28x28)-vector representing an image. Each of its dimensions corresponds to a pixel in the image. Here is a sample image for a 1:&lt;/p&gt;
-&lt;p&gt;Sample image and matrix representation - From Tensorflow tutorials. Dimensions are wrong.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-sample-image-and-matrix-representation-from-old-tensorflow-tutorials-dimensions-are-incorrect&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://GeoffNN.github.io/post/what-is-machine-learning/MNIST-Matrix_hu15199ca925afc605b8685d4d5f6e8cb7_17767_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Sample image and matrix representation. From old Tensorflow tutorials. Dimensions are incorrect.&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://GeoffNN.github.io/post/what-is-machine-learning/MNIST-Matrix_hu15199ca925afc605b8685d4d5f6e8cb7_17767_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;982&#34; height=&#34;387&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Sample image and matrix representation. From old Tensorflow tutorials. Dimensions are incorrect.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
 &lt;p&gt;Now that we identified our task, we want to model it using a loss function (step 2). We want our output to tell us if the sample is a 0, 1, 2&amp;hellip; or 9. An intuitive way to represent this is to have a 0-1 error function : if we predict the correct label, our loss is 0 and 1 if we make a mistake. Machine Learners rarely use this in practice because the discrete nature of this loss make the 4th step, the learning, harder.&lt;/p&gt;
 &lt;p&gt;A common and smart way to represent a very similar task is to have our function output a vector of probabilities over the 10 classes, i.e. a positive vector of size 10, with coordinates that sum to 1. Our new proxy task is predicting how likely a sample is to belong to a certain class, given labelled training data. We&amp;rsquo;ll call this vector $ \hat{y}$ as opposed to $ y$ which is the correct probability distribution, where $ y_i = 1$ if and only if $ i$ is the correct class of our data point. We need a metric to tell if $ \hat{y}$ is far from $ y$. Cross entropy is the go-to method for this. Its expression for each data sample is:&lt;/p&gt;
 &lt;p&gt;$$ L(\hat{y}, y) = -\sum_i y_i \log(\hat{y_i})$$&lt;/p&gt;
