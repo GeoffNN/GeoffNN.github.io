@@ -1,86 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on </title>
-    <link>/tags/</link>
-    <description>Recent content in Tags on </description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 01 Jun 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Computer Science   Machine Learning</title>
-      <link>/tags/computer-science---machine-learning/</link>
-      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/computer-science---machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Food</title>
-      <link>/tags/food/</link>
-      <pubDate>Tue, 30 May 2017 01:10:08 +0200</pubDate>
-      
-      <guid>/tags/food/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Frank Wolfe</title>
-      <link>/tags/frank-wolfe/</link>
-      <pubDate>Thu, 30 Apr 2020 11:19:33 +0200</pubDate>
-      
-      <guid>/tags/frank-wolfe/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Machine Learning</title>
-      <link>/tags/machine-learning/</link>
-      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Optimization</title>
-      <link>/tags/optimization/</link>
-      <pubDate>Tue, 21 Apr 2020 21:58:14 +0200</pubDate>
-      
-      <guid>/tags/optimization/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Plat en Sauce</title>
-      <link>/tags/plat-en-sauce/</link>
-      <pubDate>Tue, 30 May 2017 01:10:08 +0200</pubDate>
-      
-      <guid>/tags/plat-en-sauce/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Statistics   Machine Learning</title>
-      <link>/tags/statistics---machine-learning/</link>
-      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/statistics---machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tutorial</title>
-      <link>/tags/tutorial/</link>
-      <pubDate>Thu, 02 Nov 2017 02:34:31 +0200</pubDate>
-      
-      <guid>/tags/tutorial/</guid>
-      <description></description>
-    </item>
+    <title>Tags | Geoffrey Négiar</title>
+    <link>https://GeoffNN.github.io/tags/</link>
+      <atom:link href="https://GeoffNN.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tags</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 30 Apr 2020 11:19:33 +0200</lastBuildDate>
+    <image>
+      <url>https://GeoffNN.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Tags</title>
+      <link>https://GeoffNN.github.io/tags/</link>
+    </image>
     
   </channel>
 </rss>

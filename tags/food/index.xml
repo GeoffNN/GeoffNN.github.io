@@ -1,23 +1,46 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Food on </title>
-    <link>/tags/food/</link>
-    <description>Recent content in Food on </description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 30 May 2017 01:10:08 +0200</lastBuildDate>
-    
-	<atom:link href="/tags/food/index.xml" rel="self" type="application/rss+xml" />
-    
+    <title>food | Geoffrey Négiar</title>
+    <link>https://GeoffNN.github.io/tags/food/</link>
+      <atom:link href="https://GeoffNN.github.io/tags/food/index.xml" rel="self" type="application/rss+xml" />
+    <description>food</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 30 May 2017 01:10:08 +0200</lastBuildDate>
+    <image>
+      <url>https://GeoffNN.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>food</title>
+      <link>https://GeoffNN.github.io/tags/food/</link>
+    </image>
     
     <item>
       <title>Plat en Sauce Abstraction</title>
-      <link>/post/plat-en-sauce-abstraction/</link>
+      <link>https://GeoffNN.github.io/post/plat-en-sauce-abstraction/</link>
       <pubDate>Tue, 30 May 2017 01:10:08 +0200</pubDate>
-      
-      <guid>/post/plat-en-sauce-abstraction/</guid>
-      <description>Hi all! Here is my first post on food! I hope you enjoy it and am looking forward to your comments! Today, I&amp;rsquo;ll focus on the French Plat en sauce concept.
-I found an old cooking book in one of my parents&amp;rsquo; shelves a few months ago and finally got around to checking it out and trying some things in it. The book is called Le Répertoire de la Cuisine (1914 for the first edition) by Théodore Gringoire and Louis Saulnier.</description>
+      <guid>https://GeoffNN.github.io/post/plat-en-sauce-abstraction/</guid>
+      <description>&lt;p&gt;Hi all! Here is my first post on food! I hope you enjoy it and am looking forward to your comments! Today, I&amp;rsquo;ll focus on the French Plat en sauce concept.&lt;/p&gt;
+&lt;p&gt;I found an old cooking book in one of my parents&#39; shelves a few months ago and finally got around to checking it out and trying some things in it. The book is called Le Répertoire de la Cuisine (1914 for the first edition) by Théodore Gringoire and Louis Saulnier. The Répertoire is a major guide/recipe book for people who already know some technical French cuisine vocabulary - but nowadays, you can just Google them and find out all about what monder, singer or chemiser mean. I won&amp;rsquo;t reproduce the recipe from the book here - you can probably find a PDF on internet or buy it on Amazon. I will add my own recipes in the following days, tune back in soon!&lt;/p&gt;
+&lt;p&gt;I moved to the US a few months ago,  and started missing the homey family French cuisine tastes. In my mind, nothing is more characteristic of this than a Blanquette and other plats en sauce : sauce entrées where meat and veggies are slowly cooked with herbs and wine.  I read and tried a few different recipes from the Répertoire inspired from Estouffade (traditionnelle and à la provençale) and Blanquette. &lt;/p&gt;
+&lt;p&gt;My maths/CS background made me realize that these can all be abstracted to a generic Plat en sauce, which most of you experienced cooks probably already know. Couscous, Coq au vin, Bœuf bourguignon, Fricassée or even Curry implement this. They&amp;rsquo;re all pretty cheap and healthy dishes, and the abstraction allows for creation and variation depending on your current tastes and desires. Here is what makes up a good plat en sauce in my mind, with the usual French interpretations of each category.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Meat: beef stew or equivalent for other animals such as veal or lamb.&lt;/li&gt;
+&lt;li&gt;Fonds:  stock - traditionally either white if made from poultry, veal or vegetables or brown if made from red meat&lt;/li&gt;
+&lt;li&gt;Wine: same color as the fonds, i.e. red for dark fonds and white for light fonds.&lt;/li&gt;
+&lt;li&gt;Vegetables: usually onions, carrots and mushrooms at least - any other root can do, e.g. parsnip for some tartness&lt;/li&gt;
+&lt;li&gt;Carbs: usually rice or steamed potatoes, the former being my favorite to have a donburi-style Plat en sauce where the rice gets soaked in the sauce.&lt;/li&gt;
+&lt;li&gt;Spices, herbs and various seasonings: bouquet garni (thyme, rosemary and sage) is the most frequent for French dishes, but Ras El-Hanout would be its couscous equivalent. I also consider the egg/heavy cream in Blanquette in this category.&lt;/li&gt;
+&lt;li&gt;Optional: a roux to make the sauce thicker.  Always add this at the very end.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Onions have two uses in these recipes: sliced onions, usually in quarters, are for eating, and whole onions are spiked with cloves to flavor the broth and to facilitate removing the cloves in one go before serving the dish. This allows not to end up with a violent clove surprise while eating.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Roux: mix melted butter and flour (around half and half) and cook till the mixture is the color you want. Darker gives a more nutty taste, but doesn&amp;rsquo;t thicken the sauce as much. Always mix with a few ladles of sauce first before pouring in the main pot to avoid lumps.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll progressively add my recipes for different implementations of Plat en sauce as soon as I&amp;rsquo;ve tweaked them well enough, come back soon for more! Check my Recipes page for the up to date version.&lt;/p&gt;
+&lt;p&gt;Let me know if this helped you make one of these dishes or if you tried deriving a new plat en sauce from the abstraction! Here are some ideas that I&amp;rsquo;d like to try:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a vegetarian one, using tofu and vegetable stock&lt;/li&gt;
+&lt;li&gt;using ichiban-dashi (kombu seaweed and fish stock) for an umami-tasting base&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
   </channel>
