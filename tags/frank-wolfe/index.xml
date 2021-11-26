@@ -1,38 +1,48 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Frank-Wolfe | Geoffrey Négiar</title>
-    <link>https://GeoffNN.github.io/tags/frank-wolfe/</link>
-      <atom:link href="https://GeoffNN.github.io/tags/frank-wolfe/index.xml" rel="self" type="application/rss+xml" />
-    <description>Frank-Wolfe</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Feb 2020 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>https://GeoffNN.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
-      <title>Frank-Wolfe</title>
-      <link>https://GeoffNN.github.io/tags/frank-wolfe/</link>
-    </image>
+    <title>Frank Wolfe on </title>
+    <link>/tags/frank-wolfe/</link>
+    <description>Recent content in Frank Wolfe on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 30 Apr 2020 11:19:33 +0200</lastBuildDate>
+    
+	<atom:link href="/tags/frank-wolfe/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Stochastic Frank-Wolfe</title>
+      <link>/talk/mt-optml/</link>
+      <pubDate>Thu, 30 Apr 2020 11:19:33 +0200</pubDate>
+      
+      <guid>/talk/mt-optml/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Stochastic Frank-Wolfe for Constrained Finite-Sum Minimization</title>
-      <link>https://GeoffNN.github.io/publication/negiar-stochastic-2020/</link>
+      <link>/publication/negiar-stochastic-2020/</link>
       <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>https://GeoffNN.github.io/publication/negiar-stochastic-2020/</guid>
+      
+      <guid>/publication/negiar-stochastic-2020/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linearly Convergent Frank-Wolfe without Prior Knowledge</title>
-      <link>https://GeoffNN.github.io/talk/optml2019/</link>
+      <link>/talk/optml2019/</link>
       <pubDate>Sat, 14 Dec 2019 14:45:00 -0700</pubDate>
-      <guid>https://GeoffNN.github.io/talk/optml2019/</guid>
+      
+      <guid>/talk/optml2019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linearly Convergent Frank-Wolfe with Backtracking Line-Search</title>
-      <link>https://GeoffNN.github.io/publication/pedregosa-linearly-2020/</link>
+      <link>/publication/pedregosa-linearly-2020/</link>
       <pubDate>Wed, 13 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>https://GeoffNN.github.io/publication/pedregosa-linearly-2020/</guid>
+      
+      <guid>/publication/pedregosa-linearly-2020/</guid>
       <description></description>
     </item>
     

@@ -1,16 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories | Geoffrey Négiar</title>
-    <link>https://GeoffNN.github.io/categories/</link>
-      <atom:link href="https://GeoffNN.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
-    <description>Categories</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 21 Apr 2020 21:58:14 +0200</lastBuildDate>
-    <image>
-      <url>https://GeoffNN.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
-      <title>Categories</title>
-      <link>https://GeoffNN.github.io/categories/</link>
-    </image>
+    <title>Categories on </title>
+    <link>/categories/</link>
+    <description>Recent content in Categories on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Food</title>
+      <link>/categories/food/</link>
+      <pubDate>Tue, 30 May 2017 01:10:08 +0200</pubDate>
+      
+      <guid>/categories/food/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>/categories/machine-learning/</link>
+      <pubDate>Tue, 21 Apr 2020 21:58:14 +0200</pubDate>
+      
+      <guid>/categories/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tutorial</title>
+      <link>/categories/tutorial/</link>
+      <pubDate>Thu, 02 Nov 2017 02:34:31 +0200</pubDate>
+      
+      <guid>/categories/tutorial/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

@@ -1,106 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tutorial | Geoffrey Négiar</title>
-    <link>https://GeoffNN.github.io/categories/tutorial/</link>
-      <atom:link href="https://GeoffNN.github.io/categories/tutorial/index.xml" rel="self" type="application/rss+xml" />
-    <description>tutorial</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 02 Nov 2017 02:34:31 +0200</lastBuildDate>
-    <image>
-      <url>https://GeoffNN.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
-      <title>tutorial</title>
-      <link>https://GeoffNN.github.io/categories/tutorial/</link>
-    </image>
+    <title>Tutorial on </title>
+    <link>/categories/tutorial/</link>
+    <description>Recent content in Tutorial on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 02 Nov 2017 02:34:31 +0200</lastBuildDate>
+    
+	<atom:link href="/categories/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>What Is Machine Learning</title>
-      <link>https://GeoffNN.github.io/post/what-is-machine-learning/</link>
+      <link>/post/what-is-machine-learning/</link>
       <pubDate>Thu, 02 Nov 2017 02:34:31 +0200</pubDate>
-      <guid>https://GeoffNN.github.io/post/what-is-machine-learning/</guid>
-      <description>&lt;p&gt;Hi everyone, welcome back. Tonight I was having dinner with some engineer friends (sadly not a plat en sauce) and the subject of Machine Learning popped up.&lt;/p&gt;
-&lt;p&gt;The discussion quickly almost turned religious, between believers and non believers, those that thought it&amp;rsquo;s over hyped, those who just use it as a tool and those who research it like myself. All in all, it made me feel that even engineers have a very vague sense of what exactly is Machine Learning. I&amp;rsquo;ve noticed people in general often mix it up with other concepts that either include it such as AI or that it includes such as the Supervised Learning paradigm. Since it&amp;rsquo;s been a long time that I&amp;rsquo;ve been wanting to address this issue, here I go.&lt;/p&gt;
-&lt;p&gt;The aim of this article is to explain ML assuming that you already have some general mathematical background, and have (very) basic knowledge of optimization i.e. you know what argmin is. I also assume that you can read equations. &lt;/p&gt;
-&lt;p&gt;My definition of Machine Learning is the following:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Choosing a task and learning a statistical model from data that will perform well on this task.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;This definition seems extremely vague, so I&amp;rsquo;ll explain each part in more detail. I&amp;rsquo;m intentionally leaving out complications due to taking into account randomness in the data. Of course we need this both in theory and in practice.&lt;/p&gt;
-&lt;h1 id=&#34;choosing-a-task&#34;&gt;Choosing a task&lt;/h1&gt;
-&lt;p&gt;Examples of tasks are recognizing handwritten digits, translating sentences from a language to another, identifying people in pictures, forecasting the weather or stock prices, grasping an object with a robot arm&amp;hellip; Basically any clear-cut problem is a task. This part doesn&amp;rsquo;t suppose an actual mathematical expression of the task. On the other hand, it does require to be very precise as we&amp;rsquo;ll see in the following example.&lt;/p&gt;
-&lt;h1 id=&#34;a-model-that-will-_perform-well_&#34;&gt;A model that will &lt;em&gt;perform well&lt;/em&gt;&lt;/h1&gt;
-&lt;p&gt;To define what perform well means, you often want to define a loss or cost function for your task, that given your data and model, i.e. the specific function of your data you&amp;rsquo;re considering, outputs a measure of its performance. A simple example: suppose my (very basic) task is to always output the number 0. A good metric could be the distance of my function output to 0. Then it&amp;rsquo;s obvious that if f and g are the constant functions respectively equal to 42 and 0.2, g performs better on this task than f, for every distance function other than the 0-1 distance. All these different distance functions yield a different metric for the same task.
-The problem is then to minimize your loss function over the class of functions that you will choose in the next step.&lt;/p&gt;
-&lt;h1 id=&#34;a-statistical-model&#34;&gt;A statistical model&lt;/h1&gt;
-&lt;p&gt;Choosing a class of functions that take as inputs the data you want to use for the task, i.e. often a high-dimensional vector, and outputs a real number or another vector. A class of functions is a group of functions that share a certain structure, with different parameters. An example of this is the class of linear functions that can be written : $f(X) = Xw + b $, where vectors $w$ and scalar $b$ are the parameters.&lt;/p&gt;
-&lt;h1 id=&#34;learning-the-model&#34;&gt;Learning the model&lt;/h1&gt;
-&lt;p&gt;This here is the actual way that you will choose your function that minimizes your loss over your data in the class of functions that you chose. This is the learning and what makes ML so compelling to me, and makes it treated as almost magical in the media. It is usually done by optimizing the loss function, either in a principled or heuristic way. Optimization is the field of studying how to find minima of loss functions (sometimes under constraints).&lt;/p&gt;
-&lt;p&gt;This is also what made the success of deep learning, where in the parameter space, the overall loss is differentiable with regard to the parameters, allowing us to simply glide towards a (near) optimal solution using Stochastic Gradient Descent.&lt;/p&gt;
-&lt;h1 id=&#34;who-does-what&#34;&gt;Who does what?&lt;/h1&gt;
-&lt;p&gt;ML to me is described by these 4 steps. Both researchers and engineers usually focus on a subset of these steps. For example, for a well-known task such as classification (i.e. for each data point, outputting the category it should belong to), or regression (for each data point, predicting the value of something), both the task and the loss function are well known. Most work can then focus on choosing the model family and how to compute the best model of the family. On the other hand, for unsupervised learning tasks, the task is not as clear, and the loss is an open question. On their side, ML engineers will often have a hard time modelling their domain-specific task in a nice loss function, and then apply known model families and optimization schemes.&lt;/p&gt;
-&lt;h1 id=&#34;now-for-an-example&#34;&gt;Now for an example&lt;/h1&gt;
-&lt;p&gt;Let&amp;rsquo;s consider the task (step 1) of recognizing hand written digits, supposing that we know the ground truth for a subset of our data &amp;ndash; we&amp;rsquo;ll call this subset our training set. Our input is going to be a 784 (ie. 28x28)-vector representing an image. Each of its dimensions corresponds to a pixel in the image. Here is a sample image for a 1.&lt;/p&gt;
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure id=&#34;figure-sample-image-and-matrix-representation-from-old-tensorflow-tutorials-dimensions-are-incorrect&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://GeoffNN.github.io/post/what-is-machine-learning/MNIST-Matrix_hu15199ca925afc605b8685d4d5f6e8cb7_17767_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Sample image and matrix representation. From old Tensorflow tutorials. Dimensions are incorrect.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://GeoffNN.github.io/post/what-is-machine-learning/MNIST-Matrix_hu15199ca925afc605b8685d4d5f6e8cb7_17767_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;982&#34; height=&#34;387&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption&gt;
-    Sample image and matrix representation. From old Tensorflow tutorials. Dimensions are incorrect.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
-&lt;p&gt;Now that we identified our task, we want to model it using a loss function (step 2). We want our output to tell us if the sample is a 0, 1, 2&amp;hellip; or 9. An intuitive way to represent this is to have a 0-1 error function : if we predict the correct label, our loss is 0 and 1 if we make a mistake. Machine Learners rarely use this in practice because the discrete nature of this loss make the 4th step, the learning, harder.&lt;/p&gt;
-&lt;p&gt;A common and smart way to represent a very similar task is to have our function output a vector of probabilities over the 10 classes, i.e. a positive vector of size 10, with coordinates that sum to 1. Our new proxy task is predicting how likely a sample is to belong to a certain class, given labelled training data. We&amp;rsquo;ll call this vector $ \hat{y}$ as opposed to $ y$ which is the correct probability distribution, where $ y_i = 1$ if and only if $ i$ is the correct class of our data point. We need a metric to tell if $ \hat{y}$ is far from $ y$. Cross entropy is the go-to method for this. Its expression for each data sample is:&lt;/p&gt;
-&lt;p&gt;$$ L(\hat{y}, y) = -\sum_i y_i \log(\hat{y_i})$$&lt;/p&gt;
-&lt;p&gt;Note that if we did not know the $y_i$, it would be a different task, and would thus require a different loss function.&lt;/p&gt;
-&lt;p&gt;In practice, we&amp;rsquo;ll minimize the empirical average of this loss over our training data.&lt;/p&gt;
-&lt;p&gt;At this point, we want to find our model class, i.e. the structure in our functions $f$. An easy example is using a one-hidden-layer neural network, with a sigmoid activation function $\sigma$. $f$ can be written as:&lt;/p&gt;
-&lt;p&gt;$$ f(x) = \sigma ( X W_0+ b_0)w_1 + b_1$$&lt;/p&gt;
-&lt;p&gt;So our model is the set of functions that can be written this way, for any weights $W_0, w_1, b_0, b_1$.&lt;/p&gt;
-&lt;p&gt;Finally comes the learning. We want to learn what function of our class minimizes our loss. This is equivalent to finding the weights that minimize our loss, given the preceding structure. Mathematically, our minimization problem is:&lt;/p&gt;
-&lt;p&gt;$$\min_{W_0, w_1, b_0, b_1} - \sum_{i,j} y_i \log(\sigma (X_jW_0 + b_0)w_1  + b_1)$$&lt;/p&gt;
-&lt;p&gt;where the sum over $i$ refers to the different classes $(0, 1,&amp;hellip;9)$ in our problem and the sum over $j$ refers to the different samples in our training set.&lt;/p&gt;
-&lt;p&gt;NB for you who are familiar with optimization: This problem is somewhat nice, because the loss function is differentiable with respect to the weights, although it is not convex in the weights. This explains why people use Stochastic Gradient Descent, an algorithm that guarantees us to find a local minimum of our loss and the corresponding weights.&lt;/p&gt;
-&lt;p&gt;Once we find the optimal weights, we have our candidate, and have finished our learning! For this particular digit recognition dataset, common classification error runs around 5% on a validation set. The classification error used here is the intuitive 0-1 loss that we defined earlier.&lt;/p&gt;
-&lt;p&gt;A validation set is a set similar to the training set, meaning that we also know the correct labels $y_i$. The difference with the training set is that we never fed it to the learning algorithm. This means our model&amp;rsquo;s parameters were not optimized for outputting correct results for the validation set. The hope is that the parameters we learned generalize enough to work well on the validation set. We want this so that we are confident our model will perform well on any new data we feed to it, assuming this data was generated in the same manner as the training data. More on this in a future post.&lt;/p&gt;
-&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
-&lt;p&gt;I went over what makes a problem a Machine Learning problem: the 4 phases of Choosing a Task, Modelling the Task, Choosing a Model Class, and Learning i.e. Optimizing over the Model Class. I hope the example helped to clear this up. We also saw that by trying to solve a specific task, we may have to define a new task that is a good proxy for our original task. In the end though, we always validate our approach on the first task on held-out data, using the loss function that we designed for it, here the 0-1 error loss.&lt;/p&gt;
-&lt;p&gt;I hope this helps making Machine Learning less of a buzz word and more understandable! I&amp;rsquo;m looking forward to your comments, don&amp;rsquo;t hesitate to leave one below.&lt;/p&gt;
-&lt;h2 id=&#34;going-further&#34;&gt;Going further&lt;/h2&gt;
-&lt;p&gt;The Bible of ML: 
-Hastie, T.; Tibshirani, R. &amp;amp; Friedman, J. (2001), The Elements of Statistical Learning , Springer New York Inc. , New York, NY, USA .&lt;/p&gt;
-&lt;p&gt;The Bible of Optimization, basic and advanced:
-Boyd, S.; and Vandenberghe, L. (2004), Convex Optimization. Cambridge University Press, New York, NY, USA.&lt;/p&gt;
-&lt;p&gt;The Bible of Deep Learning:
-Goodfellow, I.; Bengio Y.; and Courville, A. (2016), Deep Learning. MIT Press&lt;/p&gt;
-</description>
+      
+      <guid>/post/what-is-machine-learning/</guid>
+      <description>Hi everyone, welcome back. Tonight I was having dinner with some engineer friends (sadly not a plat en sauce) and the subject of Machine Learning popped up.
+The discussion quickly almost turned religious, between believers and non believers, those that thought it&amp;rsquo;s over hyped, those who just use it as a tool and those who research it like myself. All in all, it made me feel that even engineers have a very vague sense of what exactly is Machine Learning.</description>
     </item>
     
   </channel>
